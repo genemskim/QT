@@ -24,7 +24,7 @@ while True :
         print(url)
         request.urlretrieve(url, localFile)
     except Exception as e :
-        print("Error: %s" %e)
+        print(f"Error: {e}")
         break
     date += nextDay
     year = date.year
